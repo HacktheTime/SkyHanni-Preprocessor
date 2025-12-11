@@ -16,7 +16,7 @@
 
 plugins {
     groovy
-    kotlin("jvm") version("2.0.0")
+    kotlin("jvm") version("2.2.21")
     `kotlin-dsl`
     `java-gradle-plugin`
     `maven-publish`
@@ -32,7 +32,7 @@ kotlin {
     }
 }
 
-val kotestVersion = "4.2.2"
+val kotestVersion = "6.0.7"
 
 java {
     withSourcesJar()
@@ -50,8 +50,8 @@ repositories {
 dependencies {
     implementation(gradleApi())
     implementation(localGroovy())
-    implementation("com.github.SkyHanniStudios:skyhanni-remap:1.0.0")
-    implementation("net.fabricmc:mapping-io:0.6.1")
+    implementation("com.github.SkyHanniStudios:skyhanni-remap:1.1.0")
+    implementation("net.fabricmc:mapping-io:0.8.0")
     testImplementation("io.kotest:kotest-runner-junit5-jvm:$kotestVersion")
     testImplementation("io.kotest:kotest-assertions-core-jvm:$kotestVersion")
 }
