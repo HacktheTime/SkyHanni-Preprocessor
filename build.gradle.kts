@@ -50,7 +50,7 @@ repositories {
 dependencies {
     implementation(gradleApi())
     implementation(localGroovy())
-    implementation("com.github.SkyHanniStudios:skyhanni-remap:1.1.0")
+    implementation("com.github.HacktheTime:SkyHanni-Remap:hackthetime-repo-SNAPSHOT")
     implementation("net.fabricmc:mapping-io:0.8.0")
     testImplementation("io.kotest:kotest-runner-junit5-jvm:$kotestVersion")
     testImplementation("io.kotest:kotest-assertions-core-jvm:$kotestVersion")
